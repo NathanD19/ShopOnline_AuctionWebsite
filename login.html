@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShopOnline - Login</title>
+	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">   
+    <meta name="description" content="Web Application Development"> <meta name="keywords" content="HTML">   
+    <meta name="author" content="Nathan Davies"> 
+</head>
+<body>
+<h1>ShopOnline</h1>
+<nav>
+<ul>
+	<li><a href="login.html" id="current">Home</a></li>
+	<li><a href="listing.html">Listing</a></li>
+	<li><a href="bidding.html">Bidding</a></li>
+	<li><a href="maintenance.html">Maintenance</a></li>
+	<li><a href="logout.php">Logout</a></li>
+</ul>
+</nav>
+<hr>
+
+<p>Please <i>login</i> below or register as a new user <a href="register.html">Here</a></p>
+
+<form name="loginForm">
+<fieldset>
+<legend><b>Login Details</b></legend>
+* required fields
+<br>
+	<label>*Email: <input type="input" id="email"></input></label><br>
+	<label>*Password: <input type="password" id="password"></input></label>
+	<br>
+	<input type="button" id="loginButton" onclick="login()" value="Login"></input>
+</form>
+</fieldset>
+<div id="notify"></div>
+</body>
+</html>

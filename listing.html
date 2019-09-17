@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShopOnline - Listing</title>
+	<script type="text/javascript" src="js/listing.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">   
+    <meta name="description" content="Web Application Development"> <meta name="keywords" content="HTML">   
+    <meta name="author" content="Nathan Davies"> 
+</head>
+<body>
+<h1>ShopOnline</h1>
+<nav>
+<ul>
+	<li><a href="login.html">Home</a></li>
+	<li><a href="listing.html" id="current">Listing</a></li>
+	<li><a href="bidding.html">Bidding</a></li>
+	<li><a href="maintenance.html">Maintenance</a></li>
+	<li><a href="logout.php">Logout</a></li>
+</ul>
+</nav>
+<hr>
+
+<p>Please <i>login</i> or register as a new user <a href="register.html">HERE</a> to make listings</p>
+
+
+
+<form name="loginForm">
+<fieldset>
+<legend><b>Login Details</b></legend>
+All fields required
+<br>
+	<label>Item: <input type="input" id="item"></input></label><br>
+	<label>Category
+		<select id="category">
+			<option>Camera</option>
+			<option>Phone</option>
+			<option value = "Other">Other </option>
+		</select>
+	</label>
+	<br>
+	<label>Description: <input type="input" id="desc"></input></label>
+	<br>
+	<label>Start Price: <input type="input" id="sprice"></input>
+	<input type="input" id="spricec" value="00">
+	</label>
+	<br>
+	<label>Reserve Price: <input type="input" id="rprice"></input>
+	<input type="input" id="rpricec" value="00">
+	</label>
+	<br>
+	<label>Buy It Now Price: <input type="input" id="bprice"></input>
+	<input type="input" id="bpricec" value="00">
+	</label>
+	<br>
+	<label>Duration: 
+	<script>
+		//var _day = "";
+        document.write("<select id='day'>");
+        document.write("<option value='' disabled selected>Day</option>");
+        for (var i=0; i <=31; i++)
+           	{	
+                document.write("<option>" + i + "</option>");
+			    //_day=i;
+           	}
+		document.write("</select>");
+
+		var _hour = "";
+        document.write("<select id='hour'>");
+        document.write("<option value='' disabled selected>Hour</option>");
+        for (var i=0; i <=24; i++)
+           	{
+                document.write("<option>" + i + "</option>");
+			    //_hour=i;
+           	}
+		document.write("</select>");
+
+		var _min = "";
+        document.write("<select id='min'>");
+        document.write("<option value='' disabled selected>Min</option>");
+        for (var i=0; i <=60; i++)
+           	{
+                document.write("<option>" + i + "</option>");
+			    //_min=i;
+           	}
+		document.write("</select>");
+		</script>
+	</label>
+	<br><br>
+
+	<input type="button" id="loginButton" onclick="sendData()" value="Listing"></input>
+	<input type="reset" id="reset" value="Reset">
+</form>
+</fieldset>
+<div id="notify"></div>
+</body>
+</html>

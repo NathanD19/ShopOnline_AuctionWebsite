@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShopOnline - Maintenace</title>
+	<script type="text/javascript" src="js/maintenance.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">   
+    <meta name="description" content="Web Application Development"> <meta name="keywords" content="HTML">   
+    <meta name="author" content="Nathan Davies"> 
+</head>
+<body>
+<h1>ShopOnline</h1>
+<nav>
+<ul>
+	<li><a href="login.html">Home</a></li>
+	<li><a href="listing.html">Listing</a></li>
+	<li><a href="bidding.html">Bidding</a></li>
+	<li><a href="maintenance.html" id="current">Maintenance</a></li>
+	<li><a href="logout.php">Logout</a></li>
+</ul>
+</nav>
+<hr>
+<br>
+
+<form style="text-align: center;">
+	<input type="button" id="process" value="Process Auction Items" onclick="processItems()">
+	<input type="button" id="generate" value="Generate Report" onclick="generateReport()">
+</form>
+<br>
+
+<div id="notify"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShopOnline - Bidding</title>
+	<script type="text/javascript" src="js/bidding.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">   
+    <meta name="description" content="Web Application Development"> <meta name="keywords" content="HTML">   
+    <meta name="author" content="Nathan Davies"> 
+</head>
+<body>
+<h1>ShopOnline</h1>
+<nav>
+<ul>
+	<li><a href="login.html">Home</a></li>
+	<li><a href="listing.html">Listing</a></li>
+	<li><a href="bidding.html" id="current">Bidding</a></li>
+	<li><a href="maintenance.html">Maintenance</a></li>
+	<li><a href="logout.php">Logout</a></li>
+</ul>
+</nav>
+<hr>
+
+<p id="instruct"><i>Current auction items are listed below. To place a bid for an item, use the place bid button. <br><b>NOTE:</b> Item remaing time and bid prices are updated every 5 seconds,</p>
+
+<script type="text/javascript">
+	Bidding();
+</script>
+
+<div id="notify"></div>
+</body>
+</html>
